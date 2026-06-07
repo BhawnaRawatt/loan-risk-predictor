@@ -1,0 +1,264 @@
+{
+  "best_model_name": "Random Forest",
+  "best_model_metrics": {
+    "accuracy": 0.544,
+    "f1_score": 0.4558,
+    "roc_auc": 0.5599,
+    "cv_auc_mean": 0.5568,
+    "cv_auc_std": 0.0077,
+    "report": {
+      "0": {
+        "precision": 0.6203866432337434,
+        "recall": 0.5952782462057336,
+        "f1-score": 0.6075731497418244,
+        "support": 593.0
+      },
+      "1": {
+        "precision": 0.4431554524361949,
+        "recall": 0.4692874692874693,
+        "f1-score": 0.45584725536992843,
+        "support": 407.0
+      },
+      "accuracy": 0.544,
+      "macro avg": {
+        "precision": 0.5317710478349691,
+        "recall": 0.5322828577466014,
+        "f1-score": 0.5317102025558764,
+        "support": 1000.0
+      },
+      "weighted avg": {
+        "precision": 0.5482535485791411,
+        "recall": 0.544,
+        "f1-score": 0.5458207107324627,
+        "support": 1000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        353,
+        240
+      ],
+      [
+        216,
+        191
+      ]
+    ]
+  },
+  "all_model_results": {
+    "Logistic Regewssion": {
+      "accuracy": 0.535,
+      "f1_score": 0.4587,
+      "roc_auc": 0.5549,
+      "cv_auc_mean": 0.5656,
+      "cv_auc_std": 0.0131,
+      "report": {
+        "0": {
+          "precision": 0.6167883211678832,
+          "recall": 0.5699831365935919,
+          "f1-score": 0.5924627519719544,
+          "support": 593.0
+        },
+        "1": {
+          "precision": 0.4358407079646018,
+          "recall": 0.48402948402948404,
+          "f1-score": 0.4586728754365541,
+          "support": 407.0
+        },
+        "accuracy": 0.535,
+        "macro avg": {
+          "precision": 0.5263145145662425,
+          "recall": 0.527006310311538,
+          "f1-score": 0.5255678137042543,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.5431426425941477,
+          "recall": 0.535,
+          "f1-score": 0.5380102722220466,
+          "support": 1000.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          338,
+          255
+        ],
+        [
+          210,
+          197
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.544,
+      "f1_score": 0.4558,
+      "roc_auc": 0.5599,
+      "cv_auc_mean": 0.5568,
+      "cv_auc_std": 0.0077,
+      "report": {
+        "0": {
+          "precision": 0.6203866432337434,
+          "recall": 0.5952782462057336,
+          "f1-score": 0.6075731497418244,
+          "support": 593.0
+        },
+        "1": {
+          "precision": 0.4431554524361949,
+          "recall": 0.4692874692874693,
+          "f1-score": 0.45584725536992843,
+          "support": 407.0
+        },
+        "accuracy": 0.544,
+        "macro avg": {
+          "precision": 0.5317710478349691,
+          "recall": 0.5322828577466014,
+          "f1-score": 0.5317102025558764,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.5482535485791411,
+          "recall": 0.544,
+          "f1-score": 0.5458207107324627,
+          "support": 1000.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          353,
+          240
+        ],
+        [
+          216,
+          191
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.569,
+      "f1_score": 0.2478,
+      "roc_auc": 0.5557,
+      "cv_auc_mean": 0.5411,
+      "cv_auc_std": 0.01,
+      "report": {
+        "0": {
+          "precision": 0.5971223021582733,
+          "recall": 0.8397976391231029,
+          "f1-score": 0.6979677645409951,
+          "support": 593.0
+        },
+        "1": {
+          "precision": 0.42771084337349397,
+          "recall": 0.17444717444717445,
+          "f1-score": 0.24781849912739964,
+          "support": 407.0
+        },
+        "accuracy": 0.569,
+        "macro avg": {
+          "precision": 0.5124165727658836,
+          "recall": 0.5071224067851386,
+          "f1-score": 0.47289313183419734,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.5281718384328682,
+          "recall": 0.569,
+          "f1-score": 0.5147570135176617,
+          "support": 1000.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          498,
+          95
+        ],
+        [
+          336,
+          71
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "debt_to_income": 0.11241844882086213,
+    "loan_to_income_ratio": 0.1080376925975208,
+    "credit_score": 0.10728178661714131,
+    "payment_to_income_ratio": 0.10281716341171766,
+    "income": 0.09622069795627006,
+    "loan_amount": 0.08767725610263218,
+    "monthly_payment_estimate": 0.08589281213014548,
+    "age": 0.07124167424304968,
+    "num_existing_loans": 0.04375038499947835,
+    "has_collateral": 0.03902254354436736,
+    "region_enc": 0.03489662407717873,
+    "loan_purpose_enc": 0.025512762891413524,
+    "credit_score_band": 0.02090618762461809,
+    "loan_term_months": 0.020747652370254062,
+    "age_group": 0.019719263605183848,
+    "education_enc": 0.01876179590604964,
+    "is_high_risk_purpose": 0.005095253102117183,
+    "employment_years": 0.0
+  },
+  "segment_summary": {
+    "count": {
+      "0": 1643,
+      "1": 3357
+    },
+    "avg_income": {
+      "0": 35398.97,
+      "1": 64882.18
+    },
+    "avg_credit_score": {
+      "0": 640.54,
+      "1": 655.19
+    },
+    "avg_dti": {
+      "0": 0.28,
+      "1": 0.29
+    },
+    "default_rate": {
+      "0": 0.44,
+      "1": 0.39
+    }
+  },
+  "silhouette_scores": {
+    "2": 0.2414,
+    "3": 0.2164,
+    "4": 0.2083,
+    "5": 0.2098,
+    "6": 0.2005,
+    "7": 0.1974
+  },
+  "features": [
+    "age",
+    "income",
+    "loan_amount",
+    "loan_term_months",
+    "credit_score",
+    "num_existing_loans",
+    "employment_years",
+    "debt_to_income",
+    "has_collateral",
+    "loan_to_income_ratio",
+    "monthly_payment_estimate",
+    "payment_to_income_ratio",
+    "credit_score_band",
+    "age_group",
+    "is_high_risk_purpose",
+    "education_enc",
+    "loan_purpose_enc",
+    "region_enc"
+  ],
+  "cluster_features": [
+    "income",
+    "credit_score",
+    "debt_to_income",
+    "loan_to_income_ratio",
+    "employment_years"
+  ],
+  "dataset_stats": {
+    "total_samples": 5000,
+    "default_rate": 0.4074,
+    "train_size": 4000,
+    "test_size": 1000
+  }
+}
